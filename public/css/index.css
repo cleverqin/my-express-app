@@ -1,0 +1,61 @@
+.note-list{
+    list-style: none;
+    padding: 15px;
+    margin: 0;
+    background-color: #fff;
+}
+.note-list li{
+    line-height: 40px;
+    font-size: 14px;
+    height: 40px;
+    border-top: 1px solid #eee;
+}
+.note-list li:first-child{
+    border-top: none;
+}
+.note-list li a{
+    display: block;
+    padding: 0 15px;
+    color: #4db3ff;
+}
+.note-list li a:hover{
+    color: #12a4ff;
+}
+.note-list li a span{
+    float: right;
+    color: #ccc;
+}
+.index-page{
+    background-color: #fff;
+}
+.searchInput{
+    line-height: 34px;
+    border: 1px solid #bfcbd9;
+    border-radius: 4px;
+    height: 34px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+.searchBtn{
+    height: 34px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 34px;
+    padding: 0 1em;
+    background: #4db3ff;
+    border: 1px solid #4db3ff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.searchForm{
+    padding: 20px;
+}
+.searchLabel{
+    height: 34px;
+    font-size: 14px;
+    color: #999;
+    line-height: 34px;
+    font-weight: bold;
+}

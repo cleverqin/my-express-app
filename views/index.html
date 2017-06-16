@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{include './common/head.html'}}
+    <link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+{{include './common/header.html'}}
+<div class="ui-content index-page">
+    <form action="/" method="get" class="searchForm">
+        <label class="searchLabel">文章搜索：</label>
+        <input type="hidden" name="pageNum" value="1">
+        <input type="text" name="keyWord" value="{{keyWord}}" class="searchInput" placeholder="搜索">
+        <button type="submit" class="searchBtn">查询</button>
+    </form>
+    <ul class="note-list">
+        {{each nodeList}}
+        <li><a href="/nodeDetail/{{$value.note_id}}">{{$value.note_title}}<span>{{$value.create_date}}</span></a></li>
+        {{/each}}
+    </ul>
+    <div><%- links %></div>
+</div>
+{{include './common/footer.html'}}
+<script src="/js/index.js"></script>
+</body>
+</html>

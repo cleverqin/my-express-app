@@ -1,0 +1,86 @@
+.resume-box{
+    margin: 20px auto;
+    background-color: #fff;
+    position: relative;
+}
+.resume-content{
+    padding: 15px;
+}
+.resume-title{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+}
+.resume-section{
+    padding: 0 15px;
+}
+.resume-section .section-header{
+    font-size: 18px;
+    color: #666;
+    line-height: 40px;
+    text-indent: 1em;
+    border-bottom: 1px solid #ddd;
+}
+.resume-baseInfo{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #666666;
+}
+.resume-baseInfo td{
+    padding: 10px;
+}
+.pramas-col{
+    width: 6em;
+    text-align: right;
+}
+.express-card{
+    padding: 15px 0;
+}
+.express-row{
+    margin-bottom: 5px;
+}
+.express-row:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.express-row .row-tag{
+    width: 6em;
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+    font-weight: bold;
+}
+.row-content{
+    margin-left: 6rem;
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px;
+}
+.row-content span{
+    margin-left: 15px;
+    font-size: 12px;
+}
+.row-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.row-list li{
+    font-size: 15px;
+    color: #666666;
+    line-height: 32px;
+    padding-left: 15px;
+}
+.resume-article{
+    font-size: 15px;
+    color: #666666;
+    line-height: 32px;
+    padding: 15px;
+}

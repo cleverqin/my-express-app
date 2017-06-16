@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{include './common/head.html'}}
+    <link href="/css/404.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ui-content">
+        <div class="box-404">
+            <div class="block-404-bg"></div>
+            <div class="txt">啊哦~一不小心闯进了未知领域，请点击下面按钮返回首页或者返回上一页……</div>
+            <div class="link-row">
+                <a href="/">首页</a>
+                <a href="javascript:history.go(-1)">返回上一页</a>
+            </div>
+        </div>
+    </div>
+    {{include './common/footer.html'}}
+</body>
+</html>

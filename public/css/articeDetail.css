@@ -1,0 +1,231 @@
+.article-card{
+    padding: 15px;
+    background-color: #fff;
+}
+.article-title{
+    line-height: 40px;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+.article-info{
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+    line-height: 40px;
+    padding: 0 15px;
+}
+.article-info span{
+    margin-right: 15px;
+}
+.article-date{
+    font-size: 12px;
+}
+.article-content{
+    padding: 15px;
+}
+/****************************************/
+.comment-form{
+
+}
+.comment-form .form-group:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-group .form-text{
+    width: 600px;
+    padding: 15px;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-group .post-btn{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    background-color: #4db3ff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+.form-group .post-btn:hover{
+    background-color: #12a4ff;
+}
+.form-title{
+    line-height: 40px;
+    padding: 0 10px;
+}
+label.error{
+    color: #ff7471;
+    font-size: 14px;
+    padding: 0 10px;
+}
+/********************/
+.message-item{
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+.message-item:after,.message-content:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.user-info-box{
+    color: #1d90e6;
+}
+.message-content{
+    color: #6d6d6d;
+}
+.msg-list{
+    height: 100%;
+    overflow-y: auto;
+}
+.user-info-box{
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.user-info-box .user-pic{
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.message-content{
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.message-text{
+    float: left;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 10px;
+    border-radius: 4px;
+}
+.message-text:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid transparent;
+    border-top: 0px solid transparent;
+    border-right: 10px solid #f5f5f5;
+    position: absolute;
+    right: 100%;
+    top: 13px;
+}
+.send.message-item .user-info-box{
+    float: right;
+}
+.send.message-item .message-text{
+    float: right;
+    background-color: #b2e281;
+}
+.send .message-text:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: none;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #b2e281;
+    position: absolute;
+    left: 100%;
+    top: 13px;
+}
+.message-top{
+    height: 20px;
+    font-size: 12px;
+}
+.message-time{
+    margin: 0 5px;
+}
+.send.message-item .message-top{
+    text-align: right;
+}
+.comment-list{
+    border-top: 1px solid #eee;
+    padding-top:15px ;
+}
+/********************************************/
+.face-warp a{
+    display: block;
+    float: left;
+    text-align: center;
+    margin: -1px 0 0 -1px;
+    border: 1px solid #e8e8e8;
+    color: #9ABBC8;
+    text-decoration: none;
+    padding: 3px 4px;
+}
+.face-warp a:hover{
+    z-index:2;
+    position:relative;
+    border:1px solid #0095cd;
+}
+.face-warp a img{
+    border: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+.face-warp{
+    width: 527px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 7px;
+}
+.face-warp:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+
+#faceBtn{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+}
+#faceBtn .iconfont{
+    font-size: 25px;
+    color: #6d6d6d;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+#warpBox{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 0 7px #ccc;
+    border-radius: 7px;
+}
+#warpBox:after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    top: 100%;
+    left: 10px;
+}
+.toolBarBox{
+    height: 40px;
+}

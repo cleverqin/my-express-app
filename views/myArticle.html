@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{include './common/head.html'}}
+    <link href="//at.alicdn.com/t/font_rrtkk4nxyor8jjor.css" rel="stylesheet">
+    <link href="/css/userCenter.css" rel="stylesheet">
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+</head>
+<body>
+{{include './common/header.html'}}
+<div class="ui-content user-center">
+    <div class="left-box">
+        {{include './common/userNav.html'}}
+    </div>
+    <div class="right-box">
+        <div class="my-article-box">
+            <div class="box-top"></div>
+            <div class="article-list">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>标题</th><th>日期</th><th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{each articleList}}
+                    <tr id="article-{{$value.note_id}}">
+                        <td>{{$value.note_title}}</td>
+                        <td class="center time">{{$value.create_date}}</td>
+                        <td class="center" >
+                            <a href="/nodeDetail/{{$value.note_id}}">查看</a>
+                            <a href="/articleEdit/{{$value.note_id}}">编辑</a>
+                            <a href="javascript:delNote({{$value.note_id}})">删除</a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function delNote(id) {
+        swal({
+                title: "你确定要删除吗?",
+                text: "删除后的文章将不能恢复!",
+                type: "warning",
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "确定",
+                cancelButtonText: "取消",
+                showCancelButton: true,
+                closeOnConfirm: false,
+                showLoaderOnConfirm: true,
+            },
+            function(){
+                $.ajax({
+                    url:"/delArticle",
+                    data:{noteID:id},
+                    type:'post',
+                    success:function (res) {
+                        if(res.status==101){
+                            $('#article-'+id).remove();
+                            swal("删除成功!", "文章已被成功删除", "success");
+                        }else {
+                            swal("删除失败!", "文章已被成功删除", "error");
+                        }
+                    },
+                    error:function () {
+                        swal("删除失败!", "文章已被成功删除", "error");
+                    }
+                })
+            });
+    }
+</script>
+{{include './common/footer.html'}}
+</body>
+</html>

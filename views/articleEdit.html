@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{include './common/head.html'}}
+    <link href="//at.alicdn.com/t/font_rrtkk4nxyor8jjor.css" rel="stylesheet">
+    <link href="/css/userCenter.css" rel="stylesheet">
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="/libs/themes/default/default.css" />
+    <script charset="utf-8" src="/libs/kindeditor-min.js"></script>
+    <script charset="utf-8" src="/libs/zh-CN.js"></script>
+    <script src="/js/articleEdit.js"></script>
+</head>
+<body>
+{{include './common/header.html'}}
+<div class="ui-content user-center">
+    <div class="left-box">
+        {{include './common/userNav.html'}}
+    </div>
+    <div class="right-box">
+        <form class="form user-form" id="userForm" action="/addNote" method="post">
+            <input type="hidden" name="userID" class="form-element" value="{{user.user_id}}">
+            <input type="hidden" name="noteID" class="form-element" value="{{note.note_id}}">
+            <div class="form-group">
+                <label>文章标题：</label>
+                <div class="form-control">
+                    <input type="text" name="title" class="form-element" value="{{note.note_title}}">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-box">
+                    <textarea name="content" style="width:100%;height:400px;visibility:hidden;"><%- note.note_content %></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-box">
+                    <input type="button" class="form-btn" value="提交" id="postBtn">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{{include './common/footer.html'}}
+</body>
+</html>

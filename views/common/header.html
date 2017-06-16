@@ -1,0 +1,27 @@
+<header class="ui-header">
+    <div class="site-header">
+        <div class="navBox ui-content">
+            <div class="logo">
+                <a href="/" class="logo-home"></a>
+            </div>
+            <ul class="navList">
+                <li class="{{path=='index'?'active':''}}"><a href="/">主页</a></li>
+                <li class="{{path=='userCenter'?'active':''}}"><a href="/userCenter">个人中心</a></li>
+                <li class="{{path=='aboutUs'?'active':''}}"><a href="/aboutUs">关于我们</a></li>
+            </ul>
+            <div class="nav-right-box">
+                <% if( user ){ %>
+                <a href="/userCenter" class="navbar-link">
+                    <%= user.nick_name%>
+                </a>
+                <span>&nbsp;|&nbsp;</span>
+                <a href="/logOut" class="navbar-link">退出</a>
+                <% }else{ %>
+                <a href="/login">登录</a>
+                <span>|</span>
+                <a href="/register">注册</a>
+                <%}%>
+            </div>
+        </div>
+    </div>
+</header>

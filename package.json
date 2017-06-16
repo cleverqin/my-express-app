@@ -1,0 +1,22 @@
+{
+  "name": "my-express-app",
+  "version": "1.0.0",
+  "description": "'express app exp'",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cleverqin",
+  "license": "MIT",
+  "dependencies": {
+    "art-template": "^4.9.1",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.3",
+    "express-art-template": "^1.0.0",
+    "express-session": "^1.15.3",
+    "formidable": "^1.1.1",
+    "mysql": "^2.13.0"
+  }
+}

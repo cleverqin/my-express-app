@@ -1,0 +1,29 @@
+.block-404-bg{
+    width: 652px;
+    height: 315px;
+    background: url("../libs/img/404bg.png") no-repeat center;
+    margin: 0 auto;
+}
+.txt{
+    line-height: 32px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.link-row{
+    text-align: center;
+}
+.link-row a{
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #00c3f3;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.link-row a:hover{
+    background-color: #06baf3;
+}
+.box-404{
+    padding: 40px;
+}

@@ -1,0 +1,88 @@
+.user-center{
+    background-color: #fff;
+}
+.form{
+
+}
+.form .form-group:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.form .form-group>label{
+    display: block;
+    float: left;
+    line-height: 36px;
+    height: 36px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+.form .form-group .form-control .form-element{
+    line-height: 34px;
+    border: 1px solid #bfcbd9;
+    border-radius: 4px;
+    height: 34px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+.form-label-box{
+    display: inline-block;
+    height: 36px;
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+.form-label-box input[type='checkbox'],.form-label-box input[type='radio']{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.form .form-btn{
+    height: 34px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 34px;
+    padding: 0 1em;
+    background: #4db3ff;
+    border: 1px solid #4db3ff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+.form .form-btn:hover {
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+}
+.form .form-btn:active{
+    background: #4db3ff;
+    border: 1px solid #4db3ff;
+}
+.user-form .form-group>label{
+    width: 6em;
+}
+.user-form .form-group .form-control{
+    margin-left: 6em;
+}
+.user-form .form-group{
+    margin-bottom: 10px;
+}
+.user-form {
+    padding: 15px;
+}
+label.error{
+    color: #ff7471;
+    font-size: 14px;
+    padding: 0 10px;
+}
+.user-register{
+    width: 600px;
+    margin: 0 auto;
+}
+.register-form-title{
+    text-align: center;
+    padding-top: 15px;
+}

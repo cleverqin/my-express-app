@@ -1,0 +1,380 @@
+.user-center{
+
+}
+.form{
+
+}
+.form .form-group:after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.form .form-group>label{
+    display: block;
+    float: left;
+    line-height: 36px;
+    height: 36px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+.form .form-group .form-control .form-element{
+    line-height: 34px;
+    border: 1px solid #bfcbd9;
+    border-radius: 4px;
+    height: 34px;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+    width: 500px;
+}
+.form-label-box{
+    display: inline-block;
+    height: 36px;
+    font-size: 14px;
+    color: #666;
+    line-height: 36px;
+    vertical-align: middle;
+    padding: 0 5px;
+}
+.form-label-box input[type='checkbox'],.form-label-box input[type='radio']{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+.form .form-btn{
+    height: 34px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 34px;
+    padding: 0 1em;
+    background: #4db3ff;
+    border: 1px solid #4db3ff;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+ .form .form-btn:hover {
+    background-color: #20a0ff;
+    border-color: #20a0ff;
+}
+.form .form-btn:active{
+    background: #4db3ff;
+    border: 1px solid #4db3ff;
+}
+.user-form .form-group>label{
+    width: 6em;
+}
+.user-form .form-group .form-control{
+    margin-left: 6em;
+}
+.user-form .form-group{
+    margin-bottom: 10px;
+}
+.user-form {
+    padding: 15px;
+}
+label.error{
+    color: #ff7471;
+    font-size: 14px;
+    padding: 0 10px;
+}
+/*************************************/
+.left-box{
+    width: 200px;
+    float: left;
+}
+.right-box{
+    float: left;
+    width: 985px;
+    margin-left: 15px;
+    background-color: #fff;
+}
+.user-navBox{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.user-navBox li a{
+    display: block;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 40px;
+    color: #9c9c9c;
+}
+.user-navBox li a span{
+    margin-right: 8px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.user-navBox li{
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+}
+.user-navBox li:first-child{
+    border-top: 1px solid #ccc;
+}
+.user-navBox li.active a,.user-navBox li:hover a{
+    color: #1373ff;
+}
+.user-navBox li.active,.user-navBox li:hover{
+    background-color: #eee;
+}
+/******************************************************************/
+.userInfo-box{
+    padding: 20px;
+}
+.info-row label{
+    display: inline-block;
+    line-height: 32px;
+    font-size: 14px;
+    color: #999;
+    width: 6em;
+    text-align: right;
+    font-weight: bold;
+}
+.info-row span{
+    line-height: 32px;
+    font-size: 14px;
+    color: #999;
+}
+.userPic{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+/*********************************************/
+.my-article-box{
+    padding: 20px;
+}
+.article-list table{
+    width: 100%;
+}
+.article-list table th,.article-list table td{
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.article-list table{
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.article-list table td.center{
+    text-align: center;
+}
+.article-list table th,.article-list table td{
+    font-size: 14px;
+    color: #999;
+}
+.article-list table td.time{
+    width: 180px;
+}
+.article-list table td a{
+    display: inline-block;
+    padding: 5px 15px;
+    color: #4db3ff;
+    border: 1px solid #4db3ff;
+    border-radius: 7px;
+}
+.article-list table td a:hover{
+    color: #fff;
+    background-color: #4db3ff;
+}
+/**************************************/
+.img-cropperBox{
+    background-color: #fff;
+    padding: 15px 0;
+}
+.img-cropperBox:after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.cropper-left{
+    width: 600px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+}
+.cropper-right{
+    width: 160px;
+    float: left;
+    margin-left: 10px;
+}
+.img-container {
+    width: 100%;
+    height: 100%;
+}
+.img-container > img {
+    max-width: 100%;
+}
+.img-preview {
+    float: left;
+    overflow: hidden;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.img-preview > img {
+    max-width: 100%;
+}
+
+.preview-lg {
+    width: 255px;
+    height: 143px;
+}
+
+.preview-md {
+    width: 128px;
+    height: 72px;
+}
+
+.preview-sm {
+    width: 72px;
+    height: 41px;
+}
+
+.preview-xs {
+    width: 40px;
+    height: 24px;
+    margin-right: 0;
+}
+.crl-box button,.crl-box label{
+    margin: 0 0 8px 8px;
+}
+/**********************************/
+.modal-dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(49, 49, 49, 0.52);
+    z-index: 999;
+    display: none;
+}
+.modal-content{
+    position: absolute;
+    background: #fff;
+    padding: 15px 20px;
+    left: 50%;
+    top: 60px;
+    margin-left: -405px;
+}
+.modal-header{
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.modal-footer{
+    border-top: 1px solid #ccc;
+}
+.btn{
+    display: inline-block;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn-primary{
+    color: #fff;
+    background-color: #12a4ff;
+}
+.btn-primary:hover{
+    background-color: #006dff;
+}
+.btn-default{
+    color: #666;
+    background-color: #eee;
+}
+.btn-default:hover{
+    color: #eee;
+    background-color: #ccc;
+}
+.btn-box{
+    text-align: right;
+    padding-top: 15px;
+}
+.modal-title{
+    line-height: 32px;
+    color: #999;
+}
+.clip-header{
+    height: 40px;
+    line-height: 40px;
+}
+.inputImageBox{
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #12a4ff;
+    position: relative;
+}
+.txt-label{
+    font-size: 14px;
+    color: #999;
+    font-weight: bold;
+}
+.inputImageBox span{
+    font-size: 20px;
+}
+.clip-header #inputImage{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
+.modal-close{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top:0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-close span{
+    font-size: 30px;
+    color: #999;
+}
+.slideInDown{
+    animation: slideInDown 0.5s;
+}
+.slideOutDown{
+    animation: slideOutDown 0.5s;
+}
+@keyframes slideInDown {
+    0%{
+        opacity: 0;
+        transform: translate(0,-50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes slideOutDown {
+    0%{
+        opacity: 1;
+        transform: translate(0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,-50%);
+    }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    {{include './common/head.html'}}
+    <link href="./css/register.css" rel="stylesheet">
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="/js/register.js"></script>
+</head>
+<body>
+{{include './common/header.html'}}
+<div class="ui-content">
+    <div class="user-register">
+        <h1 class="register-form-title">用户注册</h1>
+        <form class="form user-form" id="registerForm" action="/register" method="post">
+            <div class="form-group">
+                <label>用户名：</label>
+                <div class="form-control">
+                    <input type="text" name="userName" class="form-element" id="userName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>昵称：</label>
+                <div class="form-control">
+                    <input type="text" name="nickName" class="form-element">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>密码：</label>
+                <div class="form-control">
+                    <input type="password" name="password" class="form-element" id="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>确认密码：</label>
+                <div class="form-control">
+                    <input type="password" name="password1" class="form-element">
+                </div>
+            </div>
+            <!--<div class="form-group">-->
+                <!--<label>年龄：</label>-->
+                <!--<div class="form-control">-->
+                    <!--<input type="text" name="age" class="form-element">-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>性别：</label>-->
+                <!--<div class="form-control">-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="radio" name="sex" value="男">-->
+                        <!--<span>男</span>-->
+                    <!--</label>-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="radio" name="sex" value="女">-->
+                        <!--<span>女</span>-->
+                    <!--</label>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>兴趣爱好：</label>-->
+                <!--<div class="form-control">-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="checkbox" name="enjoy" value="运动">-->
+                        <!--<span>运动</span>-->
+                    <!--</label>-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="checkbox" name="enjoy" value="看书">-->
+                        <!--<span>看书</span>-->
+                    <!--</label>-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="checkbox" name="enjoy" value="篮球">-->
+                        <!--<span>篮球</span>-->
+                    <!--</label>-->
+                    <!--<label class="form-label-box">-->
+                        <!--<input type="checkbox" name="enjoy" value="看电视">-->
+                        <!--<span>看电视</span>-->
+                    <!--</label>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+                <!--<label>职业：</label>-->
+                <!--<div class="form-control">-->
+                    <!--<select name="job" class="form-element">-->
+                        <!--<option value="">请选择</option>-->
+                        <!--<option value="学生">学生</option>-->
+                        <!--<option value="职员">职员</option>-->
+                        <!--<option value="其他">其他</option>-->
+                    <!--</select>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="form-group">
+                <div class="form-control">
+                    <input type="button" class="form-btn" value="提交" id="postBtn">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{{include './common/footer.html'}}
+</body>
+</html>
