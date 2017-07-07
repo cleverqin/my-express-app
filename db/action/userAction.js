@@ -85,6 +85,14 @@ exports.myArticle = function(req, res) {
         })
     })
 }
+exports.allUsers=function (req,res) {
+    userDao.queryAll(function (err,result) {
+        var list=err?[]:result;
+        res.json({
+            list:list
+        })
+    })
+}
 exports.userValid = function(req, res) {
     var name= req.body.userName;
     userDao.queryByUserName(name,function (err,results) {

@@ -62,4 +62,8 @@ module.exports=function (app) {
         res.status(500);
         res.render('500.html', {title:'500，服务器出错了', error: error});
     })
+    app.get('/admin',function (req,res) {
+        res.render('admin.html')
+    })
+    app.get('/userList',User.allUsers)
 }

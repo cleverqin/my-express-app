@@ -40,8 +40,7 @@ $(function () {
         var valid=$("#commentForm").valid();
         var comment={
             noteID:$("[name='noteID']").val(),
-            userID:$("[name='userID']").val(),
-            content:face.replaceFace($("[name='content']").val())
+            userID:$("[name='userID']").val()
         }
         if(comment.userID==''){
             swal({
@@ -59,6 +58,11 @@ $(function () {
                     window.location.href='/login'
                 });
         }else if(valid){
+            comment={
+                noteID:$("[name='noteID']").val(),
+                userID:$("[name='userID']").val(),
+                content:face.replaceFace($("[name='content']").val())
+            }
             $.ajax({
                 url:"/addComment",
                 data:comment,

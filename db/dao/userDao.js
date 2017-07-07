@@ -13,4 +13,8 @@ module.exports = {
         var sql=userSql.update(user);
         dao.query(sql.text,sql.values,callback)
     },
+    queryAll:function (callback) {
+        var sql=userSql.queryAll();
+        dao.query(sql.text,sql.values,callback)
+    }
 };

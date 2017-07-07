@@ -17,6 +17,11 @@ module.exports={
             .where("user_tb.user_name = ?", user.userName)
             .toParam()
     },
+    queryAll:function () {
+        return squel.select()
+            .from("user_tb")
+            .toParam()
+    },
     update:function (user) {
         return squel.update()
             .table("user_tb")
